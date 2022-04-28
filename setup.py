@@ -1,27 +1,29 @@
 from setuptools import setup
 
 setup(
-    name='pyexample',
-    version='0.1.0',    
-    description='A example Python package',
-    url='https://github.com/shuds13/pyexample',
-    author='Stephen Hudson',
-    author_email='shudson@anl.gov',
+    name='nyaascrape',
+    version='1.0.0',    
+    description='Uses search terms to find data related to torrents and has a cli to download highest seeded torrent',
+    url='https://github.com/cpiccirilli1/nyaascrape',
+    author='Chelsea Piccirilli',
+    author_email='piccirilli115@gmail.com',
     license='BSD 2-clause',
-    packages=['pyexample'],
-    install_requires=['mpi4py>=2.0',
-                      'numpy',                     
+    packages=['nyaascrape'],
+    install_requires=['requests', 'beautifulsoup4', 'random', 'pprint', 'webbrowser'                     
                       ],
+    download_url="https://github.com/cpiccirilli1/nyaascrape/archive/refs/tags/v1.0.0.tar.gz",
+    keywords = ['scrape', 'nyaa.si', 'nyaa', 'cli', 'torrent', 'anime'],
 
     classifiers=[
-        'Development Status :: 1 - Planning',
-        'Intended Audience :: Science/Research',
-        'License :: OSI Approved :: BSD License',  
-        'Operating System :: POSIX :: Linux',        
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
+        'Development Status :: 5 - Production/Stable',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
+    'Intended Audience :: Developers',      # Define that your audience are developers
+    'Topic :: Software Development :: Build Tools',
+    'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',   # Again, pick a license
+    'Programming Language :: Python :: 3',      #Specify which pyhton versions that you want to support
+    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
     ],
 )
