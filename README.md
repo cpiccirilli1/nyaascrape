@@ -7,12 +7,14 @@ Examples of use:
 n = nyaascrape("Gundam Wing")
 
 n.main()
+
 #finds best magnet link based on seeds
 
 
 Example2:
 
 n = nyaascrape("Escaflowne")
+
 n.nyaadata()
 
 #returns a tuple of data organized into dicts.
